@@ -20,13 +20,4 @@ public class MainReverse {
         System.out.println(myList);
         // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
     }
-
-    public static void reverseLinkedList(LinkedList<Integer> list) {
-        LinkedList<Integer> helpList = new LinkedList<>();
-        int size = list.size();
-        for (int i = 0; i < size; i++) {
-            helpList.addFirst(list.removeFirst());
-        }
-        list.addAll(helpList);
-    }
 }
